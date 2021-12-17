@@ -22,9 +22,9 @@ jobs:
           server_port: 465
           username: zhichuv@163.com
           password: TDSEESCYARUMQAMR
-          subject: Shanghai Weather Report (${{env.REPORT_DATE}})
+          subject: Shenyang Weather Report (${{env.REPORT_DATE}})
           body: file://result.txt
           to: yc_zzh@qq.com
           from: GitHub Actions
-          content_type: text/html
+          content_type: text/text
 
