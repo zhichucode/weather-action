@@ -23,7 +23,7 @@ jobs:
           username: zhichuv@163.com
           password: TDSEESCYARUMQAMR
           subject: Shanghai Weather Report (${{env.REPORT_DATE}})
-          body: file://result.html
+          body: file://result.txt
           to: yc_zzh@qq.com
           from: GitHub Actions
           content_type: text/html
