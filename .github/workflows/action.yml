@@ -24,7 +24,7 @@ jobs:
           password: TDSEESCYARUMQAMR
           subject: Shanghai Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
-          to: yc_zzh@qq.com
+          to: zhaochuanmin0129@163.com
           from: GitHub Actions
           content_type: text/html
 
