@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout codes'
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
       - name: 'Get Weather'
         run: bash ./weather.sh
       - name: 'Get Date'
@@ -23,21 +23,11 @@ jobs:
           username: zhichuv@163.com
           password: TDSEESCYARUMQAMR
           subject: Shenyang Weather Report (${{env.REPORT_DATE}})
-          body: file://result.txt
-          to: yc_zzh@qq.com
-          from: GitHub Actions
-          content_type: text/text
-      - name: 'Send mail to chuanmin'
-        uses: dawidd6/action-send-mail@master
-        with:
-          server_address: smtp.163.com
-          server_port: 465
-          username: zhichuv@163.com
-          password: TDSEESCYARUMQAMR
-          subject: Shenyang Weather Report (${{env.REPORT_DATE}})
-          body: file://result.txt
-          to: zhaochuanmin0129@163.com
-          from: GitHub Actions
-          content_type: text/text
+          body: Build job of ${{github.repository}} completed successfully!
+          html_body: file://result.html
+          to: yc_zzh@qq.com,zhaochuanmin0129@163.com
+          from: Lovely Baby
+          ignore_cert: true
+          convert_markdown: true
 
 
