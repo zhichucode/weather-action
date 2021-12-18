@@ -13,4 +13,4 @@ UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
 #  -o result.html \
 #  wttr.in/$CITY?format=4\&$UNIT
 
-curl -o result.html wttr.in/London?format=3
+curl -o result.html wttr.in/Shenyang?format=4
