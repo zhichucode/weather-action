@@ -24,7 +24,7 @@ jobs:
           password: TDSEESCYARUMQAMR
           subject: 沈阳天气预报 (${{env.REPORT_DATE}})
           body: 每天六点把天气预报发送给您
-          html_body: file://README.md
+          html_body: file://result.html
           to: yc_zzh@qq.com   #,zhaochuanmin0129@163.com
           from: Lovely Baby
           ignore_cert: true
