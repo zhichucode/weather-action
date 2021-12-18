@@ -14,5 +14,5 @@ UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
 #  wttr.in/$CITY?format=4\&$UNIT
 
 curl -o result.html -H "Accept-Language: $LANGUAGE" wttr.in/Shenyang?format=v3\&$UNIT
-wget wttr.in/Paris.png
+convert source.jpg <( curl wttr.in/Shenyang_tqp0.png ) -geometry +50+50 -composite target.jpg
 echo -e "\n感谢你收看今天的天气预报\n想要退订吗，想得美\n" >> result.html
