@@ -1,9 +1,8 @@
 name: 'GitHub Actions Weather Bot'
 
 on:
-  push:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 23 * * *'
 
 jobs:
   bot:
@@ -22,11 +21,11 @@ jobs:
           server_port: 465
           username: zhichuv@163.com
           password: TDSEESCYARUMQAMR
-          subject: 沈阳天气预报 (${{env.REPORT_DATE}})
-          body: 每天六点把天气预报发送给您
+          subject: 天气预报 (${{env.REPORT_DATE}})
+          body: 每天七点把天气预报发送给您
           html_body: file://result.html
-          to: yc_zzh@qq.com   #,zhaochuanmin0129@163.com
-          from: Lovely Baby
+          to: yc_zzh@qq.com,zhaochuanmin0129@163.com,1477099504@qq.com,1205193076@qq.com,1959559096@qq.com
+          from: 今天一定要开心啊~
           ignore_cert: true
           convert_markdown: true
 
