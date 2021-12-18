@@ -16,5 +16,15 @@ UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
 # curl -o result.html -H "Accept-Language: $LANGUAGE" wttr.in/Shenyang?format=v3\&$UNIT
 
 convert source.jpg <( curl wttr.in/Shenyang_tqp0.png ) -geometry +50+50 -composite target.jpg
-echo -e "\n感谢你收看今天的天气预报\n想要退订吗，想得美\n" >> result.html
-echo "<img src="source.jpg" alt="Simply Easy Learning" width="200" height="80">" >> result.html
+#echo -e "\n感谢你收看今天的天气预报\n想要退订吗，想得美\n" >> result.html
+echo "<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML img Tag</title>
+   </head>
+
+   <body>
+      <img src="source.jpg" alt="Simply Easy Learning" width="500"
+         height="200">
+   </body>
+</html>" >> result.html
