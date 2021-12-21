@@ -2,7 +2,7 @@ name: 'GitHub Actions Weather Bot'
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '45 22 * * *'
 
 jobs:
   bot:
@@ -24,8 +24,8 @@ jobs:
           subject: 天气预报 (${{env.REPORT_DATE}})
           body: 每天七点把天气预报发送给您
           html_body: file://result.html
-          to: yc_zzh@qq.com,zhaochuanmin0129@163.com,1477099504@qq.com,1205193076@qq.com,1959559096@qq.com
-          from: 今天一定要开心啊~
+          to: yc_zzh@qq.com,zhaochuanmin0129@163.com,1477099504@qq.com,1205193076@qq.com,1959559096@qq.com,734694169@qq.com
+          from: 又是正能量满满的一天
           ignore_cert: true
           convert_markdown: true
 
