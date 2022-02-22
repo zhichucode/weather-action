@@ -24,7 +24,7 @@ jobs:
           subject: 天气预报 (${{env.REPORT_DATE}})
           body: 每天七点把天气预报发送给您
           html_body: file://result.html
-          to: zhichu@gmail.com
+          to: google@gmail.com,facebook@gmail.com
           from: ^_^
           ignore_cert: true
           convert_markdown: true
